@@ -8,6 +8,8 @@ keyed_groups:
   key: tags
 - prefix: azure_location
   key: location
+include_vm_resource_groups:
+- rg-02
 hostvar_expressions:
   ansible_host: public_ipv4_addresses | first
 conditional_groups:
